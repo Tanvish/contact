@@ -1,0 +1,194 @@
+.nav{
+	border-bottom: 1px solid #e0e0e0;
+	width: 100%;
+	display: inline-block;
+	padding: 14px;
+	font-size: 15px;
+	z-index: 4242;
+}
+.nav-ele{
+	display: inline-block;
+}
+.nav-left{
+	font-size: 25px;
+}
+.nav-right
+{
+	font-size: 20px;
+	float: right;
+
+}
+.nav-right a{
+	top: 2px;
+	position: relative;
+	z-index: 1;
+	color: black;
+	padding: 10px;
+	transition: .3s;
+}
+
+.nav-right a:after{
+	position: absolute;
+	content: "";
+	z-index: -1;
+	height: 2px;
+	width: 0;
+	top: 100%;
+	left: 50%; right: 50%;
+	opacity: 0;
+	transition: .3s;
+	background: #000;
+	
+}
+.nav-right a:hover{
+	text-decoration: none;
+	background-color: #000;
+	color: white;
+
+}
+
+.row{
+	width: 100%;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	
+}
+.box{
+	width: 20%;
+	min-width: 250px;
+	border: 1px solid #e0e0e0;
+	display: inline-block;
+	margin: 10px;
+    transition: .3s;
+    padding: 20px;
+   
+    position: relative;
+    top: 0;
+
+	box-shadow: 0 2px 5px 0 rgba(0,0,0,.16), 0 2px 10px 0 rgba(0,0,0,.12);
+	overflow: scroll;
+	height: 350px;
+	
+}
+.box::-webkit-scrollbar{
+	display: none;
+}
+.box:hover{
+	box-shadow: 0 4px 7px 0 rgba(0,0,0,.16), 0 4px 16px 0 rgba(0,0,0,.12);
+}
+.img-box{
+	padding: 10px;
+	
+}
+
+.text-box{
+   font-family: 'Raleway',verdana;
+   font-weight: 500;
+	padding: 10px;
+
+	
+}
+.contact-text{
+	font-family: 'Raleway',verdana;
+	font-weight: 600;
+}
+
+.box img{
+	height: 130px;
+	border-radius: 50%; 
+	width: 130px
+}
+img{
+ 
+
+}
+input[type=file]{
+
+}
+#button{
+background: #e0e0e0;
+width: 100%;
+} 
+button{
+	border:none;
+	background: #e0e0e0;
+	color: black;
+	padding: 7px;
+	margin: 5px;
+
+	font-family: 'Raleway';	
+	transition:.3s;
+	font-size: 13px;
+}
+button:hover{
+	
+	background-color: #34495e;
+	color: white;
+
+}
+.edit-text{	
+	padding: 5px;
+	margin: 10px;
+}
+.toggles{
+	height: 0;
+	overflow: hidden;
+}
+.toggles1{
+	height: 0;
+	overflow: hidden;
+}
+.toggles2{
+	height: 0;
+	overflow: hidden;
+}
+.toggles3{
+	height: 0;
+	overflow: hidden;
+}
+.toggles4{
+	height: 0;
+	overflow: hidden;
+}
+.toggles5{
+	height: 0;
+	overflow: hidden;
+}
+.toggles0{
+	height: 0;
+	overflow: hidden;
+}
+.toggles10{
+	height: 0;
+	overflow: hidden;
+}
+.toggles20{
+	height: 0;
+	overflow: hidden;
+}
+.toggles30{
+	height: 0;
+	overflow: hidden;
+}
+.toggles40{
+	height: 0;
+	overflow: hidden;
+}
+.toggles50{
+	height: 0;
+	overflow: hidden;
+}
+button:focus{
+	outline: none;
+}
+
+
+.toggles-open{
+	height: auto;
+}
+.edit{
+	width: 80px;
+}
+.edits{
+	width: 80px;
+}

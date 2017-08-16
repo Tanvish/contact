@@ -1,0 +1,221 @@
+<head>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<link href="https://fonts.googleapis.com/css?family=Raleway:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+      <script type="text/javascript" src= "jquery-ui.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script type="text/javascript" href= "script.js"></script>
+
+</head>
+<body>
+<script type="text/javascript">
+     function readURL(input) {
+            if (input.files && input.files[0]) {
+                var reader = new FileReader();
+
+                reader.onload = function (e) {
+                    $('#blah')
+                        .attr('src', e.target.result);
+                };
+
+                reader.readAsDataURL(input.files[0]);
+            }
+        }
+       
+        function funcs(){
+        var x =  document.getElementById('name').value;
+        document.getElementById('name1').innerHTML=x;
+    }
+     function funcs2(){
+        var x =  document.getElementById('occupation').value;
+        document.getElementById('occupation1').innerHTML=x;
+    }
+       function funcs3(){
+        var x =  document.getElementById('number').value;
+        document.getElementById('number1').innerHTML=x;
+    }
+  $(document).ready(function() {
+  $('.edit-display').click(function(){
+    $('.toggles').toggleClass('toggles-open',500);
+
+  })
+})
+  $(document).ready(function() {
+  $('.edit-name').click(function(){
+    $('.toggles1').toggleClass('toggles-open',500);
+
+  })
+})
+  $(document).ready(function() {
+  $('.edit-occupation').click(function(){
+    $('.toggles2').toggleClass('toggles-open',500);
+
+  })
+})
+  $(document).ready(function() {
+  $('.edit-number').click(function(){
+    $('.toggles4').toggleClass('toggles-open',500);
+
+  })
+})
+
+  $(document).ready(function() {
+  $('.edit').click(function(){
+    $('.toggles5').toggleClass('toggles-open',500);
+
+  })
+})
+  function readURL2(input) {
+            if (input.files && input.files[0]) {
+                var reader = new FileReader();
+
+                reader.onload = function (e) {
+                    $('#blah2')
+                        .attr('src', e.target.result);
+                };
+
+                reader.readAsDataURL(input.files[0]);
+            }
+        }
+       
+        function funcs4(){
+        var x =  document.getElementById('name2').value;
+        document.getElementById('name3').innerHTML=x;
+    }
+     function funcs5(){
+        var x =  document.getElementById('occupation2').value;
+        document.getElementById('occupation3').innerHTML=x;
+    }
+       function funcs6(){
+        var x =  document.getElementById('number2').value;
+        document.getElementById('number3').innerHTML=x;
+    }
+  $(document).ready(function() {
+  $('.edits-display').click(function(){
+    $('.toggles0').toggleClass('toggles-open',500);
+
+  })
+})
+  $(document).ready(function() {
+  $('.edit-name8').click(function(){
+    $('.toggles10').toggleClass('toggles-open',500);
+
+  })
+})
+  $(document).ready(function() {
+  $('.edit-occupation8').click(function(){
+    $('.toggles20').toggleClass('toggles-open',500);
+
+  })
+})
+  $(document).ready(function() {
+  $('.edit-number8').click(function(){
+    $('.toggles40').toggleClass('toggles-open',500);
+
+  })
+})
+
+  $(document).ready(function() {
+  $('.edit8').click(function(){
+    $('.toggles50').toggleClass('toggles-open',500);
+
+  })
+})
+</script>
+	
+	<div class="nav">
+		<div class="nav-left nav-ele"><span class="name">Full Name</span></div>
+		<div class="nav-right nav-ele"><a href="index.html">Logout</a></div>
+	</div>
+	<div class="row" align="center">
+	<div class="box">
+		<div class="img-box box-inside" align="center">
+			<img src="main.jpg" id= "blah">
+		</div>
+		<div class="text-box box-inside" align="left">
+			<p><span class= "contact-text">Full Name:</span> <span id="name1"></span></p>
+			<p><span class= "contact-text">Occupation: </span> <span id="occupation1"></span></p>
+			<p><span class= "contact-text">Contact Number: </span> <span id="number1"></span></p>
+			<p></p>
+		</div>
+		 <button class="edit">Edit</button>
+			<div class="edit-button toggles5">
+			
+				<div class="edit-box">
+        		    <button class="edit-display">Display</button>
+            		<button class="edit-name">Name</button>
+            		<button class="edit-occupation">Occupation</button>
+                    <button class="edit-number">Contact Number</button>
+	 					<div class="edit-display toggles">
+							<input type='file' onchange="readURL(this);" id= "button"/>
+						</div>	
+
+						<div class="toggles1">
+							<input type="text" id= "name" placeholder="Name" class="edit-text" onkeyup="funcs()">
+							<button type="submit" class = "edit-name" value="submit">Submit</button>
+						</div>
+
+						<div class="toggles2">
+							<input type="text" id="occupation" placeholder="Occupation" class="edit-text"
+							onkeyup="funcs2()">
+							<button class = "edit-occupation">Submit</button>
+						</div>
+
+						<div class="toggles4">
+							<input type="text" id="number" class="edit-text" name="Contact" placeholder="Contact"
+							onkeyup="funcs3()">
+							<button class = "edit-number">Submit</button>
+						</div>	
+				</div>
+			</div>
+	</div>
+	<div class="box">
+		<div class="img-box box-inside" align="center">
+			<img src="main.jpg" id= "blah2">
+		</div>
+		<div class="text-box box-inside" align="left">
+			<p><span class= "contact-text">Full Name:</span> <span id="name3"></span></p>
+			<p><span class= "contact-text">Occupation: </span> <span id="occupation3"></span></p>
+			<p><span class= "contact-text">Contact Number: </span> <span id="number3"></span></p>
+			<p></p>
+		</div>
+		 <button class="edits edit8">Edit</button>
+			<div class="edit-button toggles50">
+			
+				<div class="edit-box">
+        		    <button class="edits-display">Display</button>
+            		<button class="edit-name8">Name</button>
+            		<button class="edit-occupation8">Occupation</button>
+                    <button class="edit-number8">Contact Number</button>
+	 					<div class="edits-display toggles0">
+							<input type='file' onchange="readURL2(this);" id= "button"/>
+						</div>	
+
+						<div class="toggles10">
+							<input type="text" id= "name2" placeholder="Name" class="edit-text" onkeyup="funcs4()">
+							<button type="submit" class = "edit-name8" value="submit">Submit</button>
+						</div>
+
+						<div class="toggles20">
+							<input type="text" id="occupation2" placeholder="Occupation" class="edit-text"
+							onkeyup="funcs5()">
+							<button class = "edit-occupation8">Submit</button>
+						</div>
+
+						<div class="toggles40">
+							<input type="text" id="number2" class="edit-text" name="Contact" placeholder="Contact"
+							onkeyup="funcs6()">
+							<button class = "edit-number8">Submit</button>
+						</div>	
+				</div>
+			</div>
+	</div>
+</div>	
+
+
+</body>
